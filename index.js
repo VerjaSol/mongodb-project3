@@ -1,12 +1,12 @@
 
-const PORT= process.env.PORT || 3000;
+
 const express = require("express");
 const app = express();
 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
+const PORT= process.env.PORT || 3000;
 
 const MongoClient = require("mongodb").MongoClient;
 //peitetään uri
