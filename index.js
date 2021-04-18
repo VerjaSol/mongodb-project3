@@ -11,7 +11,7 @@ const PORT= process.env.PORT || 5000;
 const MongoClient = require("mongodb").MongoClient;
 //peitetään uri
 //require("dotenv/config");
-const uri = mongodb+srv://m001-student:m001-mongodb-basics@sandbox.g2wot.mongodb.net/countries
+const uri = "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.g2wot.mongodb.net/countries"
       //process.env.DB_CONNECTION;
 
 //lisätään mongoose ja tarkistetaan yhteys tietokantaan
