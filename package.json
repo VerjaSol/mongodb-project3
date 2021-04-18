@@ -11,8 +11,7 @@
     "start": "node index.js"
   },
   "keywords": [
-    "MongoDB",
-    "API"
+    "MongoDB"
   ],
   "author": "Vera",
   "license": "ISC",
