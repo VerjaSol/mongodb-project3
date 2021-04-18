@@ -29,9 +29,9 @@ const Country = mongoose.model(
   "europe"
 );
 // haetaan etusivu html-tiedostosta
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
-});
+//app.get("/", (req, res) => {
+//  res.sendFile(__dirname + "/index.html");
+//});
 
 //reitti api/countries hakee koko listan
 app.get("/api/countries", (req, res) => {
