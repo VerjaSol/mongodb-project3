@@ -6,7 +6,7 @@ const app = express();
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const PORT= process.env.PORT || 3000;
+const PORT= process.env.PORT || 5000;
 
 const MongoClient = require("mongodb").MongoClient;
 //peitetään uri
@@ -29,13 +29,8 @@ const Country = mongoose.model(
   "europe"
 );
 // haetaan etusivu html-tiedostosta
-//app.get("/", (req, res) => {
- // res.sendFile(__dirname + "/index.html");
-//});
-app.use(express.static("./"));
-
-app.get("/", function (req, res) {
-  res.render("index.html");
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
 });
 
 //reitti api/countries hakee koko listan
