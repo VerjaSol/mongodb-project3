@@ -1,7 +1,9 @@
 # mongodb-project3
 Projekti 3
 
-Projektissa käytän itse kehittämää pientä tietokantaa Countries.europe:
+Projektissa käytän itse kehittämää pientä tietokantaa "mongodb+srv://m001-student:m001-mongodb-basics@sandbox.g2wot.mongodb.net/countries"
+
+Countries.europe: 
 Country
 capital
 population
