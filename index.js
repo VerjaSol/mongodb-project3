@@ -33,6 +33,10 @@ const Country = mongoose.model(
 //  res.sendFile(__dirname + "/index.html");
 //});
 
+app.get("/", (req, res) => {
+  res.send("Welcome!");
+});
+
 //reitti api/countries hakee koko listan
 app.get("/api/countries", (req, res) => {
   Country.find({}, (err, results) => {
